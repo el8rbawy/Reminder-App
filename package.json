@@ -1,14 +1,16 @@
 {
-  "name": "weather",
+  "name": "reminder-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "formik": "^1.5.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-redux": "^7.1.1",
     "react-scripts": "3.0.1",
-    "redux": "^4.0.4"
+    "redux": "^4.0.4",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
