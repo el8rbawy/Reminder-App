@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Inputs from './components/inputs';
+import View from './components/view';
 
 class App extends Component {
    render() {
@@ -10,6 +11,9 @@ class App extends Component {
                   <h1>APP</h1>
                   <Inputs />
                   <button>Clear Reminders</button>
+               </div>
+               <div className="col-6">
+                  <View />
                </div>
             </div>
          </div>

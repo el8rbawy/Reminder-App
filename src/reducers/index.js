@@ -1,7 +1,7 @@
 import { ADD_REMINDER } from '../types'
 
 const reminders = (state = [], action) => {
-   let save = [];
+   let save = null;
 
    if (action.type === ADD_REMINDER) {
       save = [...state, {
@@ -11,7 +11,8 @@ const reminders = (state = [], action) => {
       }]
       
       return save;
-   }
+
+   } else {return state;}
    
 }
 
