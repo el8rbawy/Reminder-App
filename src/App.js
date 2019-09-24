@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import Inputs from './components/inputs'
+import Inputs from './components/inputs';
 
 class App extends Component {
    render() {
       return (
-         <div>
-            <div className="container">
-               <div className="row">
-                  <div className="col-6">
-                     <h1>APP</h1>
-                     <Inputs />
-                     <button>Clear Reminders</button>
-                  </div>
+         <div className="container">
+            <div className="row">
+               <div className="col-6">
+                  <h1>APP</h1>
+                  <Inputs />
+                  <button>Clear Reminders</button>
                </div>
             </div>
          </div>

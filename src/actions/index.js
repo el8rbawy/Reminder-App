@@ -6,6 +6,6 @@ export const add_Reminder = (text, date) => {
       text,
       date
    }
-   console.log('Add', action)
+   
    return action;
 }

@@ -1,11 +1,18 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import { Formik, Form, Field } from 'formik';
+import { add_Reminder } from '../../actions';
 
-const Inputs = () => {
+const Inputs = (props) => {
+
+   const handleSubmit = (values) => {
+      props.add_Reminder(values.name, values.data)
+   }
+
    return (
       <Formik 
          initialValues={{ name: '', data: '' }}
-         onSubmit={values => console.log(values)}
+         onSubmit={handleSubmit}
          render={props => (
             <Form onSubmit={ props.handleSubmit }>
                <Field name="name" type="text" placeholder="what should i do?" />
@@ -17,4 +24,4 @@ const Inputs = () => {
    )
 }
 
-export default Inputs;
+export default connect(null, { add_Reminder })(Inputs);
