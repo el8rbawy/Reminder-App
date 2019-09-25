@@ -1,19 +1,25 @@
-import { ADD_REMINDER } from '../types'
+import { ADD_REMINDER, REMOVE_REMINDER } from '../types';
 
 const reminders = (state = [], action) => {
-   let save = null;
+   let reminders = null;
 
    if (action.type === ADD_REMINDER) {
-      save = [...state, {
+
+      reminders = [...state, {
          id: Math.random(),
          text: action.text,
          date: action.date
       }]
-      
-      return save;
+
+      return reminders;
+
+   } else if (action.type === REMOVE_REMINDER) {
+
+      reminders = state.filter(reminder => reminder.id !== action.id)
+      return reminders;
 
    } else {return state;}
-   
+
 }
 
 export default reminders;
