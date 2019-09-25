@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import Inputs from './components/inputs';
 import View from './components/view';
+import { clear_Reminder } from './actions';
 
 class App extends Component {
    render() {
@@ -10,7 +12,7 @@ class App extends Component {
                <div className="col-6">
                   <h1>APP</h1>
                   <Inputs />
-                  <button>Clear Reminders</button>
+                  <button onClick={ this.props.clear_Reminder }>Clear Reminders</button>
                </div>
                <div className="col-6">
                   <View />
@@ -21,4 +23,4 @@ class App extends Component {
    }
 }
 
-export default App;
+export default connect(null, { clear_Reminder })(App);
