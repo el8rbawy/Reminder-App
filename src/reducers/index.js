@@ -1,7 +1,7 @@
 import { ADD_REMINDER, REMOVE_REMINDER, CLEAR_REMINDERS } from '../types';
 
 const reminders = (state = [
-   {id: 1, text: 'Lorem Ipsum is simply dummy text of the printing and typesetting', date: null}]
+   {id: 1, text: 'Lorem Ipsum is simply dummy text of the printing and typesetting', date: 'Fri Sep 27 2019 06:32:04'}]
    , action) => {
    let reminders = null;
 

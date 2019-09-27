@@ -12,7 +12,6 @@ class App extends Component {
                <div className="row justify-content-center">
                   <div className="col-auto">
                      <Inputs />
-                     
                   </div>
                   <div className="col-auto" style={{width: "350px"}}>
                      <View />

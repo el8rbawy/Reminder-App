@@ -49,4 +49,19 @@ Buttons = styled.div`
       }
       span {margin-left: 10px;}
    }
+`,
+CopyRight = styled.div`
+   text-align: center;
+   font-size: 0.9rem;
+   margin-top: 15px;
+
+   span {
+      text-decoration: underline;
+      cursor: pointer;
+      transition: all .3s ease-in-out;
+
+      &:hover {
+         color: #ccc;
+      }
+   }
 `

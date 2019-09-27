@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt, faPlus } from '@fortawesome/free-solid-svg-icons';
 import { toast } from 'react-toastify';
 import { add_Reminder, clear_Reminders } from '../../actions';
-import { Form, Buttons } from './style';
+import { Form, Buttons, CopyRight } from './style';
 
 const Inputs = (props) => {
 
@@ -39,7 +39,10 @@ const Inputs = (props) => {
                <Field name="name" type="text" placeholder="what should you do?" />
                <DatePicker
                   selected={ props.values.date }
-                  onChange={value => props.setFieldValue('date', value)}
+                  onChange={value => {
+                     props.setFieldValue('date', value)
+                     console.log(value)
+                  }}
                   dateFormat="MM/dd/yyyy h:mm aa"
                   showTimeInput
                   inline
@@ -53,6 +56,9 @@ const Inputs = (props) => {
                      <span>ALL</span>
                   </button>
                </Buttons>
+               <CopyRight>©Development by <span onClick={
+                  () => window.open('https://ahmedessam.info/')
+               }>Ahmed Essam</span></CopyRight>
             </Form>
          )}
       />

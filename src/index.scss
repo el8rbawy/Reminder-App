@@ -9,6 +9,10 @@ body {
 }
 span {display: inline-block;}
 button {display: block;}
+::-webkit-input-placeholder {color: rgb(224, 224, 224);}
+::-moz-placeholder {color: rgb(224, 224, 224);}
+:-ms-input-placeholder {color: rgb(224, 224, 224);}
+::-ms-input-placeholder {color: rgb(224, 224, 224);}
 ::placeholder {color: rgb(224, 224, 224);}
 
 .app { // Style App.js

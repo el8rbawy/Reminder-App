@@ -40,4 +40,7 @@ export const UL = styled.ul`
          }
       }
    }
+   @media (max-width: 767px) {
+      margin-top: 50px;
+   }
 `
