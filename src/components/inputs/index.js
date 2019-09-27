@@ -39,10 +39,7 @@ const Inputs = (props) => {
                <Field name="name" type="text" placeholder="what should you do?" />
                <DatePicker
                   selected={ props.values.date }
-                  onChange={value => {
-                     props.setFieldValue('date', value)
-                     console.log(value)
-                  }}
+                  onChange={value => props.setFieldValue('date', value)}
                   dateFormat="MM/dd/yyyy h:mm aa"
                   showTimeInput
                   inline

@@ -43,4 +43,12 @@ export const UL = styled.ul`
    @media (max-width: 767px) {
       margin-top: 50px;
    }
+`,
+Empty = styled.div`
+   text-align: center;
+   line-height: 382.47px;
+
+   @media (max-width: 767px) {
+      line-height: 1.5;
+   }
 `

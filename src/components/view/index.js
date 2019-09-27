@@ -4,7 +4,7 @@ import moment from 'moment';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { remove_Reminder } from '../../actions';
-import { UL } from './style';
+import { UL, Empty } from './style';
 
 const View = (props) => {
 
@@ -16,9 +16,9 @@ const View = (props) => {
             <FontAwesomeIcon icon={ faTimes } />
          </span>
       </li>
-   )) : <div style={{textAlign: "center", lineHeight: "382.47px"}}>
+   )) : <Empty>
             Unfortunately empty, add a reminder now!
-        </div>
+        </Empty>
 
    return <UL>{ mapReminders }</UL>
    

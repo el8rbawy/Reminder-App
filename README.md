@@ -1,6 +1,7 @@
 ## Features:
 1. Responsive to all screens
-2. No Errors & Clean code
+2. Save the reminder in cookies
+3. No Errors & Clean code
 
 ## Skills used:
 - [ReactJS](https://github.com/facebook/react)
@@ -15,3 +16,4 @@
 - [Styled-Components](https://github.com/styled-components/styled-components)
 - [Fontawesome](https://github.com/FortAwesome/react-fontawesome)
 - [React-Toastify](https://github.com/fkhadra/react-toastify)
+- [sfcookies](https://github.com/15Dkatz/sfcookies)
