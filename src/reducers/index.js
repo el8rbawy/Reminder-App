@@ -1,6 +1,8 @@
 import { ADD_REMINDER, REMOVE_REMINDER, CLEAR_REMINDERS } from '../types';
 
-const reminders = (state = [], action) => {
+const reminders = (state = [
+   {id: 1, text: 'Lorem Ipsum is simply dummy text of the printing and typesetting', date: null}]
+   , action) => {
    let reminders = null;
 
    switch(action.type) {

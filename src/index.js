@@ -5,6 +5,7 @@ import { Provider } from 'react-redux';
 import reminders from './reducers';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap-grid.css';
+import 'react-toastify/dist/ReactToastify.css';
 import './index.scss'
 
 const store = createStore(

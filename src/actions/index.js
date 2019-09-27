@@ -18,7 +18,7 @@ export const
 
       return action;
    },
-   clear_Reminder = () => {
+   clear_Reminders = () => {
       const action = {
          type: CLEAR_REMINDERS
       }
